@@ -13,7 +13,6 @@
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <argLine>-Duser.language=en</argLine>
-
     </properties>
     <dependencies>
         <dependency>
@@ -48,5 +47,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
 </project>
