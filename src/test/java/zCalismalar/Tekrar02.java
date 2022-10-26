@@ -1,4 +1,4 @@
-package get_request;
+package zCalismalar;
 
 import base_url.JsonplaceholderBaseUrl;
 import io.restassured.http.ContentType;
@@ -8,7 +8,8 @@ import org.junit.Test;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-public class Get04 extends JsonplaceholderBaseUrl {
+public class Tekrar02 extends JsonplaceholderBaseUrl    {
+
     /*
         Given
             https://jsonplaceholder.typicode.com/todos
@@ -28,22 +29,23 @@ public class Get04 extends JsonplaceholderBaseUrl {
          2, 7, and 9 should be among the userIds
      */
     @Test
-    public void get01() {
-        // Set The URL
-        spec.pathParam("first","todos");
-        // Expected Data
+    public void test01(){
+        //set the url
+        spec.pathParams("first", "todos");
 
-        // Send the request and Get Response
-        Response response = given().when().accept(ContentType.JSON).spec(spec).get("/{first}");
+        //expected data
+        //send the request AND get response
+        Response response = given().spec(spec).when().accept(ContentType.JSON).get("/{first}");
         response.prettyPrint();
-        //do asserttion
-        response.then().assertThat().statusCode(200).contentType(ContentType.JSON).
-                body("id",hasSize(200),"title",hasItem("quis eius est sint explicabo"),"userId",hasItems(2,7,9));
 
-
-
-
-
+        // do asserton
+        response.then().
+                assertThat().
+                statusCode(200).
+                contentType(ContentType.JSON).
+                body("id",hasSize(200),
+                        "title",hasItem("quis eius est sint explicabo"),
+                        "userId",hasItems(2,7,9));
 
 
 
