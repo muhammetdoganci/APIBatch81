@@ -1,10 +1,12 @@
 package get_request;
 
 import base_url.JsonplaceholderBaseUrl;
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.hasSize;
 import static org.junit.Assert.*;
 import static org.junit.Assert.*;
 
@@ -21,9 +23,9 @@ public class Get05 extends JsonplaceholderBaseUrl {
  */
     @Test
     public void get01(){
-        //https://restful-booker.herokuapp.com/booking?firstname=Ali&lastname=Cengiz
+        //https://restful-booker.herokuapp.com/booking?firstname=Kimie&lastname=Jackie
         // 1. Set The Url
-        spec.pathParam("first","booking").queryParams("firstname","Guoqiang","lastname","Sevilla");
+        spec.pathParam("first","booking").queryParams("firstname","Kimie","lastname","Jackie");
 
         // 2. Set The expected Data
 
@@ -33,7 +35,7 @@ public class Get05 extends JsonplaceholderBaseUrl {
 
         // 4. Do Assertion
         assertEquals(404,response.getStatusCode());
-        assertFalse(response.asString().contains("bookingid"));
+       // assertTrue(response.asString().contains("bookingid"));
     }
 
 
