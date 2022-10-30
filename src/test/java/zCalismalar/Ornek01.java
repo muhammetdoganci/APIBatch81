@@ -8,7 +8,7 @@ import org.junit.Test;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.core.IsEqual.*;
 
-public class Tekrar01 extends JsonplaceholderBaseUrl {
+public class Ornek01 extends JsonplaceholderBaseUrl {
 
     /*
         Given

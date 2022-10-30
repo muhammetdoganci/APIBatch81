@@ -8,7 +8,7 @@ import org.junit.Test;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-public class Tekrar02 extends JsonplaceholderBaseUrl {
+public class Ornek02 extends JsonplaceholderBaseUrl {
 
     /*
         Given
