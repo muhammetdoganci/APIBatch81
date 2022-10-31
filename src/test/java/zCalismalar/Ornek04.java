@@ -50,8 +50,7 @@ public class Ornek04 {
         int men = 0;
         int kids = 0;
 
-        for (String each:womenList
-        ) {
+        for (String each:womenList) {
             if(each.equals("Women")){
                 women++;
             } else if (each.equals("Men")) {
