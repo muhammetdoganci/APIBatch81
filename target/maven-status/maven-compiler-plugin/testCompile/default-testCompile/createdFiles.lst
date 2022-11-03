@@ -15,9 +15,12 @@ test_data\GoRestTestData.class
 zCalismalar\Ornek03.class
 get_request\Get03b.class
 get_request\Get04b.class
+put_request\Put01.class
 base_url\AutoBaseUrl.class
 get_request\Get07.class
+get_request\Get11.class
 get_request\Get01.class
+post_request\Post01.class
 get_request\Get08.class
 zCalismalar\Tekrar06Jsonpath.class
 base_url\GoRestBaseUrl.class
