@@ -1,6 +1,10 @@
 package pojos;
 
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class BookingPojo {
+    // 1.tüm keyler için private variableler oluşturuyoruz
     private String firstname;
     private String lastname;
     private Integer totalprice;
@@ -8,6 +12,7 @@ public class BookingPojo {
     private BookingdatesPojo bookingdates;
     private String additionalneeds;
 
+    //2. tüm parametrelerle ve parametresiz constrocturlar oluşturuyoruz
     public BookingPojo(String firstname, String lastname, Integer totalprice, Boolean depositpaid, BookingdatesPojo bookingdates, String additionalneeds) {
         this.firstname = firstname;
         this.lastname = lastname;
@@ -18,9 +23,9 @@ public class BookingPojo {
     }
 
     public BookingPojo() {
-
     }
 
+    //3. public getter ve setter methodlarını olusturuyoruz
     public String getFirstname() {
         return firstname;
     }
@@ -81,4 +86,6 @@ public class BookingPojo {
                 '}';
 
     }
+
+
 }
