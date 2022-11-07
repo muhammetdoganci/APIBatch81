@@ -3,19 +3,18 @@ package pojos;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-
-public class BookingdatesPojo {
+public class BookingDatesPojo {
 
     // 1.tüm keyler için private variableler oluşturuyoruz
     private String checkin;
     private String checkout;
 
     //2. tüm parametrelerle ve parametresiz constrocturlar oluşturuyoruz
-    public BookingdatesPojo(String checkin, String checkout){
+    public BookingDatesPojo(String checkin, String checkout){
         this.checkin = checkin;
         this.checkout = checkout;
     }
-    public BookingdatesPojo(){
+    public BookingDatesPojo(){
 
     }
 
@@ -37,7 +36,7 @@ public class BookingdatesPojo {
 
     @Override
     public String toString(){
-        return "BookingdatesPojo{" +
+        return "BookingDatesPojo{" +
             "checkin='"  + checkin + '\'' +
             ", checkout='" + checkout + '\'' +
         '}';

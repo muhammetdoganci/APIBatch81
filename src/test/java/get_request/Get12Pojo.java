@@ -1,12 +1,11 @@
 package get_request;
 
 import base_url.RestfulBaseUrl;
-import groovy.transform.stc.POJO;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.Test;
 import pojos.BookingPojo;
-import pojos.BookingdatesPojo;
+import pojos.BookingDatesPojo;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
@@ -40,7 +39,7 @@ And
         spec.pathParams("first", "booking", "second", 19);
 
         //set the expected data
-        BookingdatesPojo bookingdatesPojo = new BookingdatesPojo("2018-01-01","2019-01-01");
+        BookingDatesPojo bookingdatesPojo = new BookingDatesPojo("2018-01-01","2019-01-01");
         BookingPojo expectedData = new BookingPojo("Guoqiang","Liu",111,true,bookingdatesPojo,"Breakfast");
         System.out.println("expectedData = " + expectedData);
 

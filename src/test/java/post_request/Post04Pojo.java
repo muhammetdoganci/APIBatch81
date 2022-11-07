@@ -6,7 +6,7 @@ import io.restassured.response.Response;
 import org.junit.Test;
 import pojos.BookingPojo;
 import pojos.BookingResponseBodyPojo;
-import pojos.BookingdatesPojo;
+import pojos.BookingDatesPojo;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
@@ -53,7 +53,7 @@ public class Post04Pojo extends RestfulBaseUrl {
         spec.pathParam("first", "booking");
 
         //set the expected data
-        BookingdatesPojo bookingDatesPojo = new BookingdatesPojo("2021-09-21","2021-12-21");
+        BookingDatesPojo bookingDatesPojo = new BookingDatesPojo("2021-09-21","2021-12-21");
         BookingPojo expectedData = new BookingPojo("Ali", "Can", 999, true, bookingDatesPojo, "BreaCankfast" );
         System.out.println("expectedData = " + expectedData);
 

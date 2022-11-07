@@ -1,9 +1,11 @@
+base_url\DummyRestApiBaseUrl.class
 zCalismalar\Ornek01.class
 zCalismalar\Tekrar06.class
 get_request\Get12Pojo.class
 pojos\BookingPojo.class
 get_request\Get10.class
 zCalismalar\Ornek04.class
+pojos\BookingDatesPojo.class
 delete_request\Delete01.class
 utils\ObjectMapperUtils.class
 post_request\Post03Pojo.class
@@ -13,10 +15,11 @@ post_request\Post05ObjectMapper_Pojo.class
 put_request\Put01.class
 base_url\AutoBaseUrl.class
 get_request\Get07.class
-pojos\BookingdatesPojo.class
 get_request\Get01.class
 get_request\Get08.class
 post_request\Post04Pojo.class
+post_request\Post06.class
+zCalismalar\Odev01.class
 base_url\JsonplaceholderBaseUrl.class
 patch_request\Patch01.class
 test_data\GoRestTekrar.class
@@ -29,6 +32,7 @@ get_request\Get02.class
 get_request\Get01b.class
 get_request\Get02b.class
 get_request\Get09.class
+get_request\Get15.class
 get_request\Get05.class
 get_request\Get06b.class
 zCalismalar\OrnekTekrar05.class
@@ -38,6 +42,7 @@ zCalismalar\Ornek03.class
 get_request\Get03b.class
 get_request\Get04b.class
 test_data\RestfulTestData.class
+zCalismalar\Odev02.class
 get_request\Get11.class
 get_request\Get14ObjectMapper_Map.class
 pojos\JsonPlaceHolderPojo.class
@@ -51,3 +56,5 @@ pojos\GoRestDataPojo.class
 get_request\Get03.class
 get_request\Get06.class
 base_url\RestfulBaseUrl.class
+pojos\DuumyRestApiResponseBodyPojo.class
+pojos\DuumyRestApiDataPojo.class

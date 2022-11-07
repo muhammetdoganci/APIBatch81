@@ -9,11 +9,11 @@ public class BookingPojo {
     private String lastname;
     private Integer totalprice;
     private Boolean depositpaid;
-    private BookingdatesPojo bookingdates;
+    private BookingDatesPojo bookingdates;
     private String additionalneeds;
 
     //2. tüm parametrelerle ve parametresiz constrocturlar oluşturuyoruz
-    public BookingPojo(String firstname, String lastname, Integer totalprice, Boolean depositpaid, BookingdatesPojo bookingdates, String additionalneeds) {
+    public BookingPojo(String firstname, String lastname, Integer totalprice, Boolean depositpaid, BookingDatesPojo bookingdates, String additionalneeds) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.totalprice = totalprice;
@@ -58,11 +58,11 @@ public class BookingPojo {
         this.depositpaid = depositpaid;
     }
 
-    public BookingdatesPojo getBookingdates() {
+    public BookingDatesPojo getBookingdates() {
         return bookingdates;
     }
 
-    public void setBookingdates(BookingdatesPojo bookingdates) {
+    public void setBookingdates(BookingDatesPojo bookingdates) {
         this.bookingdates = bookingdates;
     }
 
