@@ -11,12 +11,15 @@ utils\ObjectMapperUtils.class
 post_request\Post03Pojo.class
 get_request\Get04.class
 pojos\GoRestPojo.class
+pojos\DummyRestApiDeletePojo.class
 post_request\Post05ObjectMapper_Pojo.class
 put_request\Put01.class
 base_url\AutoBaseUrl.class
 get_request\Get07.class
+get_request\Get17.class
 get_request\Get01.class
 get_request\Get08.class
+get_request\Get16.class
 post_request\Post04Pojo.class
 post_request\Post06.class
 zCalismalar\Odev01.class
@@ -24,6 +27,7 @@ base_url\JsonplaceholderBaseUrl.class
 patch_request\Patch01.class
 test_data\GoRestTekrar.class
 test_data\JsonplaceholderTestData.class
+delete_request\Delete02.class
 zCalismalar\Ornek02.class
 get_request\Get13Pojo.class
 get_request\Get14ObjectMapper_Pojo.class
@@ -33,6 +37,7 @@ get_request\Get01b.class
 get_request\Get02b.class
 get_request\Get09.class
 get_request\Get15.class
+test_data\RegResinTestData.class
 get_request\Get05.class
 get_request\Get06b.class
 zCalismalar\OrnekTekrar05.class
@@ -51,10 +56,11 @@ post_request\Post01.class
 pojos\BookingResponseBodyPojo.class
 zCalismalar\Tekrar06Jsonpath.class
 base_url\GoRestBaseUrl.class
+put_request\Put02.class
 base_url\ReqresBaseUrl.class
 pojos\GoRestDataPojo.class
 get_request\Get03.class
 get_request\Get06.class
+pojos\DummyRestApiDataPojo.class
+pojos\DummyRestApiResponseBodyPojo.class
 base_url\RestfulBaseUrl.class
-pojos\DuumyRestApiResponseBodyPojo.class
-pojos\DuumyRestApiDataPojo.class

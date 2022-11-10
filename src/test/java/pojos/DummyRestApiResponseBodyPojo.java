@@ -1,51 +1,45 @@
 package pojos;
 
+
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-
-public class DuumyRestApiResponseBodyPojo {
-
+public class DummyRestApiResponseBodyPojo {
     private String status;
-    private DuumyRestApiDataPojo data;
+    private DummyRestApiDataPojo data;
     private String message;
 
-    public DuumyRestApiResponseBodyPojo(String status, DuumyRestApiDataPojo data, String message) {
+    public DummyRestApiResponseBodyPojo(String status, DummyRestApiDataPojo data, String message) {
         this.status = status;
         this.data = data;
         this.message = message;
     }
 
-    public DuumyRestApiResponseBodyPojo() {
+    public DummyRestApiResponseBodyPojo() {
     }
 
     public String getStatus() {
         return status;
     }
-
     public void setStatus(String status) {
         this.status = status;
     }
-
-    public DuumyRestApiDataPojo getData() {
+    public DummyRestApiDataPojo getData() {
         return data;
     }
-
-    public void setData(DuumyRestApiDataPojo data) {
+    public void setData(DummyRestApiDataPojo data) {
         this.data = data;
     }
-
     public String getMessage() {
         return message;
     }
-
     public void setMessage(String message) {
         this.message = message;
     }
 
     @Override
     public String toString() {
-        return "DuumyRestApiResponseBodyPojo{" +
+        return "DummyRestApiResponseBodyPojo{" +
                 "status='" + status + '\'' +
                 ", data=" + data +
                 ", message='" + message + '\'' +
